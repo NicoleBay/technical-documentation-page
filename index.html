@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>technical-documentation-page</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#HTML_Properties">HTML Properties</a>
+        <a class="nav-link" href="#CSS_Properties">CSS Properties</a>
+        <a class="nav-link" href="#JAVASCRIPT_Properties"
+          >JavaScript Properties</a
+        >
+        <a class="nav-link" href="#BOOTSTRAP_Properties"
+          >Bootstrap Properties</a
+        >
+        <a class="nav-link" href="#FIGMA_Properties">Figma Properties</a>
+      </nav>
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          This documentation provides a comprehensive guide on various web
+          development technologies, including HTML, CSS, JavaScript, Bootstrap,
+          and Figma. Each section covers the essential properties, features, and
+          usage examples to help you understand and effectively use these
+          technologies.
+        </p>
+      </section>
+
+      <section class="main-section" id="HTML_Properties">
+        <header>HTML Properties</header>
+        <p>
+          HTML (HyperText Markup Language) is the standard language for creating
+          web pages. Here are some basic elements:
+        </p>
+        <ul>
+          <li><code>&lt;h1&gt; to &lt;h6&gt;</code>: Heading tags</li>
+          <li><code>&lt;p&gt;</code>: Paragraph tag</li>
+          <li><code>&lt;a&gt;</code>: Anchor tag for links</li>
+          <li><code>&lt;img&gt;</code>: Image tag</li>
+        </ul>
+        <code></code>
+        <p>
+          HTML elements can have attributes to provide additional information:
+        </p>
+        <ul>
+          <li><code>href</code>: Specifies the URL for an anchor tag</li>
+          <li><code>src</code>: Specifies the source file for an image</li>
+          <li><code>alt</code>: Provides alternative text for an image</li>
+          <li>
+            <code>class</code>: Assigns one or more class names for CSS styling
+          </li>
+        </ul>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Sample HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a sample HTML document.&lt;/p&gt;
+    &lt;a href="https://example.com"&gt;Visit Example.com&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <section class="main-section" id="CSS_Properties">
+        <header>CSS Properties</header>
+        <p>
+          CSS (Cascading Style Sheets) is used to style HTML elements. Here are
+          some basic properties:
+        </p>
+        <ul>
+          <li><code>color</code>: Sets the text color</li>
+          <li><code>background-color</code>: Sets the background color</li>
+          <li><code>font-size</code>: Sets the size of the font</li>
+          <li><code>margin</code>: Sets the outer space around an element</li>
+          <li><code>padding</code>: Sets the inner space within an element</li>
+        </ul>
+        <p>CSS selectors are used to select the HTML elements to be styled</p>
+        <ul>
+          <li>
+            <code>.class</code>: Selects all elements with the specified class
+          </li>
+          <li><code>#id</code>: Selects the element with the specified ID</li>
+          <li>
+            <code>element</code>: Selects all elements of the specified type
+          </li>
+        </ul>
+        <pre><code>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    margin: 1em 0;
+}
+</code></pre>
+      </section>
+
+      <section class="main-section" id="JAVASCRIPT_Properties">
+        <header>JavaScript Properties</header>
+        <p>
+          JavaScript is a programming language used to create dynamic and
+          interactive effects within web browsers. Here are some basic syntax
+          elements:
+        </p>
+        <ul>
+          <li>
+            <code>var</code>, <code>let</code>, <code>const</code>: Declaring
+            variables
+          </li>
+          <li><code>function</code>: Defining a function</li>
+          <li><code>if</code>, <code>else</code>: Conditional statements</li>
+          <li><code>for</code>, <code>while</code>: Looping statements</li>
+        </ul>
+        <p>
+          JavaScript can be used to manipulate the DOM (Document Object Model):
+        </p>
+        <ul>
+          <li>
+            <code>document.getElementById()</code>: Selects an element by its ID
+          </li>
+          <li>
+            <code>document.querySelector()</code>: Selects the first element
+            that matches a CSS selector
+          </li>
+          <li>
+            <code>element.innerHTML</code>: Sets or gets the HTML content of an
+            element
+          </li>
+          <li>
+            <code>element.addEventListener()</code>: Attaches an event handler
+            to an element
+          </li>
+        </ul>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Sample JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 id="title"&gt;Hello, World!&lt;/h1&gt;
+    &lt;button id="changeTitle"&gt;Change Title&lt;/button&gt;
+
+    &lt;script&gt;
+        document.getElementById('changeTitle').addEventListener('click', function() {
+            document.getElementById('title').innerHTML = 'Title Changed!';
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <section class="main-section" id="BOOTSTRAP_Properties">
+        <header>Bootstrap Properties</header>
+        <h2>Grid System</h2>
+        <p>
+          Bootstrap is a popular CSS framework for developing responsive and
+          mobile-first websites. The grid system is one of its key features:
+        </p>
+        <ul>
+          <li><code>.container</code>: Fixed-width container</li>
+          <li><code>.row</code>: Creates a row of columns</li>
+          <li><code>.col</code>: Defines a column within a row</li>
+        </ul>
+        <h2>Components</h2>
+        <p>Bootstrap provides a variety of components:</p>
+        <ul>
+          <li><code>.btn</code>: Button styles</li>
+          <li><code>.navbar</code>: Navigation bar</li>
+          <li><code>.card</code>: Card layout</li>
+          <li><code>.modal</code>: Modal dialogs</li>
+        </ul>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Sample Bootstrap&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col"&gt;
+                &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                &lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <section class="main-section" id="FIGMA_Properties">
+        <header>Figma Properties</header>
+        <p>
+          Figma is a web-based UI/UX design tool used for creating interface
+          designs, prototypes, and collaborative work. Here are some essential
+          properties and features:
+        </p>
+        <p>
+          Figma offers a range of features to streamline the design process:
+        </p>
+        <ul>
+          <li>
+            <strong>Frames:</strong> Define the boundaries of your design
+            (similar to artboards in other tools).
+          </li>
+          <li>
+            <strong>Components:</strong> Reusable design elements that can be
+            used across multiple frames and projects.
+          </li>
+          <li>
+            <strong>Prototyping:</strong> Create interactive prototypes to
+            simulate user interactions.
+          </li>
+          <li>
+            <strong>Collaboration:</strong> Real-time collaboration with team
+            members, allowing multiple users to work on the same project
+            simultaneously.
+          </li>
+          <li>
+            <strong>Version History:</strong> Track changes and revert to
+            previous versions of your design.
+          </li>
+        </ul>
+        <h2>Design Elements</h2>
+        <p>Key design elements in Figma include:</p>
+        <ul>
+          <li>
+            <strong>Shapes:</strong> Basic geometric shapes like rectangles,
+            circles, and lines.
+          </li>
+          <li>
+            <strong>Text:</strong> Add and style text elements with various
+            fonts and formatting options.
+          </li>
+          <li>
+            <strong>Images:</strong> Import and manipulate images within your
+            design.
+          </li>
+          <li>
+            <strong>Grids and Layouts:</strong> Utilize grids and layout tools
+            to maintain consistent spacing and alignment.
+          </li>
+        </ul>
+        <h2>Figma example</h2>
+        <p>Here's a basic example of creating a button component in Figma:</p>
+        <ol>
+          <li>Open Figma and create a new frame.</li>
+          <li>Draw a rectangle for the button background.</li>
+          <li>
+            Add a text element on top of the rectangle for the button label
+            (e.g., "Click Me").
+          </li>
+          <li>Select both the rectangle and text, then group them together.</li>
+          <li>
+            Convert the group into a component by right-clicking and selecting
+            "Create Component".
+          </li>
+        </ol>
+        <p>
+          Now, you can use this button component across your designs and update
+          all instances simultaneously by editing the main component.
+        </p>
+        <h2>Collaborative Features</h2>
+        <p>Figma's collaborative features include:</p>
+        <ul>
+          <li>
+            <strong>Comments:</strong> Add comments directly on the design for
+            feedback and discussion.
+          </li>
+          <li>
+            <strong>Sharing:</strong> Share your design with team members via a
+            link with view or edit permissions.
+          </li>
+          <li>
+            <strong>Team Libraries:</strong> Create shared libraries of
+            components and styles for consistent use across projects.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
